@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>REGP Wallacetown</title>
+  <title>Low Carbon Heating in Wallacetown</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,29 +15,138 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/js-untar@2.0.0/build/dist/untar.js"></script>
   <script src="js/video.js"></script>
-  <header id="navbar">
-    <a class="navbar-no-hover" href="index.html" style="padding: 0">
-      <img src="assets/colour-logo-2-150x45.png" width="150" height="45" alt="Strath Logo" id="navbar-logo" /></a>
-    <ul id="navbar-list">
-        <li class="nav-item">
-            <a class="navbar-link" href="background.html">Background</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-link" href="methodology.html">Methodology</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-link" href="results.html">Results</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-link" href="conclusion.html">Conclusion</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-link" href="theteam.html">The Team</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-link" href="resources.html">Resources</a>
-        </li>
-        <li class="nav-item">
+</head>
+
+<body>
+    <header id="navbar">
+        <a class="navbar-no-hover" href="index.html" style="padding: 0">
+            <img src="assets/colour-logo-2-150x45.png" width="150" height="45" alt="Strath Logo" id="navbar-logo" />
+        </a>
+        <ul id="navbar-list">
+            <li class="nav-item">
+                <a class="navbar-link" href="background.html">Background</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="methodology.html">Methodology</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="results.html">Results</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="conclusion.html">Conclusion</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="theteam.html">The Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+                <ul class="social">
+                    <li>
+                        <a href="https://github.com/isaacedwardtyler/isaacedwardtyler.github.io" target="_blank"><i class="fa-brands fa-github"> </i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.strath.ac.uk/research/energysystemsresearchunit/" target="_blank">
+                            <img class="navbar-icon" src="assets/ESRU_300x300.png" alt="ESRU" id="ESRU-logo" />
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <a id="nav-burger" onclick="toggleHamburgerMenu()"><i class="fa fa-bars"></i></a>
+    </header>
+    <div id="content">
+        <section id="jumbotron">
+            <div id="jumbotron-loading">
+                <p>Loading Sustainability</p>
+                <progress id="loading-bar" value="0" max="100" value="0"></progress>
+            </div>
+            <div id="jumbotron-sticky">
+                <div id="jumbotron-content-container">
+                    <div id="jumbotron-content">
+                        <div id="jumbotron-logo"><img src="assets/logo.png" /></div>
+                        <div id="jumbotron-text">
+                            <h1>Do you like space heating?</h1>
+                            <h2>Because we do.</h2>
+                        </div>
+                    </div>
+                    <div id="jumbotron-content-back">
+                        <div id="jumbotron-logo"><img src="assets/logo.png" /></div>
+                        <div id="jumbotron-text">
+                            <h1>Do you like space heating?</h1>
+                            <h2>Because we do.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="jumbotron-label" class="hidden">
+                    <h3>
+                        <i><h4 style="color:#7e8aad; margin: 0;">Strathosphere II</h4></i>
+                        <span style="color: #8d8d8d;">International Rocket Week</span> <br>
+                        <span style="color: #8d8d8d;">August 27, 2023</span>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="section-content" id="about-text">
+                <h1 class="show-on-scroll">
+                    Strathclyde's Space Society since 2011.
+                </h1>
+                <p class="show-on-scroll">
+                    StrathSEDS runs talks, events and workshops aimed at giving students
+                    a link to the space industry. During the semester we hold meetings
+                    on Tuesdays and Thursdays at 5pm. On Tuesdays we hold one-off
+                    sessions designed to give students an environment to grow their
+                    interest in space and gain skills necessary to work in the industry.
+                    Thursdays are dedicated to working on projects such as Strathosphere
+                    I.
+                </p>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="section-content" id="project-text">
+                <h1 class="show-on-scroll">Projects</h1>
+                <p class="show-on-scroll">
+                    The project team at StrathSEDS is working on innovative projects and
+                    competitions to show off our skills.
+                    <a href="/projects.html">Learn more about our projects.</a>
+                </p>
+            </div>
+        </section>
+        <section class="section" id="join">
+            <div class="section-content" id="join-text">
+                <h1 class="show-on-scroll">Join us!</h1>
+                <p class="show-on-scroll">
+                    We're super welcoming and would love to have you on our team. Join
+                    us on <a href="https://isaacedwardtyler.github.io/index.html">Test</a> or come
+                    along to our weekly meetings! Pick up a membership on the
+                    <a href="https://isaacedwardtyler.github.io/index.html">Test Link</a>.
+                    <br />
+                    If you need to get in touch, you can send us an email at
+                    <a href="mailto:contact@strathseds.org">contact@strathseds.org</a>.
+                </p>
+            </div>
+        </section>
+        <section class="section" id="sponsors">
+            <div class="section-content" id="sponsor-text">
+                <h1 class="show-on-scroll">Our sponsors</h1>
+                <p class="show-on-scroll">
+                    We thank our generous sponsors for helping us launch Strathosphere
+                    I, II and III.
+                </p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div id="footer-content">
+            <div id="footer-left">
+                <h3>MSc Sustainable Engineering: Renewable Energy Systems and Environment</h3>
+                <h4>
+                    The University of Strathclyde is a charitable body, registered in Scotland, number SC015263.
+                </h4>
+
+            </div>
             <ul class="social">
                 <li>
                     <a href="https://github.com/isaacedwardtyler/isaacedwardtyler.github.io" target="_blank"><i class="fa-brands fa-github"> </i></a>
@@ -48,117 +157,9 @@
                     </a>
                 </li>
             </ul>
-        </li>
-    </ul>
-    <a id="nav-burger" onclick="toggleHamburgerMenu()"><i class="fa fa-bars"></i></a>
-  </header>
-</head>
-
-<body>
-  <div id="content">
-    <section id="jumbotron">
-      <div id="jumbotron-loading">
-        <p>Loading Sustainability</p>
-        <progress id="loading-bar" value="0" max="100" value="0"></progress>
-      </div>
-      <div id="jumbotron-sticky">
-        <div id="jumbotron-content-container">
-          <div id="jumbotron-content">
-            <div id="jumbotron-logo"><img src="assets/logo.png" /></div>
-            <div id="jumbotron-text">
-              <h1>Do you like space heating?</h1>
-              <h2>Because we do.</h2>
-            </div>
-          </div>
-          <div id="jumbotron-content-back">
-            <div id="jumbotron-logo"><img src="assets/logo.png" /></div>
-            <div id="jumbotron-text">
-              <h1>Do you like space heating?</h1>
-              <h2>Because we do.</h2>
-            </div>
-          </div>
         </div>
-        <div id="jumbotron-label" class="hidden">
-          <h3>
-            <i><h4 style="color:#7e8aad; margin: 0;">Strathosphere II</h4></i>
-              <span style="color: #8d8d8d;">International Rocket Week</span> <br>
-              <span style="color: #8d8d8d;">August 27, 2023</span>
-          </h3>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="about">
-      <div class="section-content" id="about-text">
-        <h1 class="show-on-scroll">
-          Strathclyde's Space Society since 2011.
-        </h1>
-        <p class="show-on-scroll">
-          StrathSEDS runs talks, events and workshops aimed at giving students
-          a link to the space industry. During the semester we hold meetings
-          on Tuesdays and Thursdays at 5pm. On Tuesdays we hold one-off
-          sessions designed to give students an environment to grow their
-          interest in space and gain skills necessary to work in the industry.
-          Thursdays are dedicated to working on projects such as Strathosphere
-          I.
-        </p>
-      </div>
-    </section>
-    <section class="section" id="projects">
-      <div class="section-content" id="project-text">
-        <h1 class="show-on-scroll">Projects</h1>
-        <p class="show-on-scroll">
-          The project team at StrathSEDS is working on innovative projects and
-          competitions to show off our skills.
-          <a href="/projects.html">Learn more about our projects.</a>
-        </p>
-      </div>
-    </section>
-    <section class="section" id="join">
-      <div class="section-content" id="join-text">
-        <h1 class="show-on-scroll">Join us!</h1>
-        <p class="show-on-scroll">
-          We're super welcoming and would love to have you on our team. Join
-          us on <a href="https://isaacedwardtyler.github.io/index.html">Test</a> or come
-          along to our weekly meetings! Pick up a membership on the
-          <a href="https://isaacedwardtyler.github.io/index.html">Test Link</a>.
-          <br />
-          If you need to get in touch, you can send us an email at
-          <a href="mailto:contact@strathseds.org">contact@strathseds.org</a>.
-        </p>
-      </div>
-    </section>
-    <section class="section" id="sponsors">
-      <div class="section-content" id="sponsor-text">
-        <h1 class="show-on-scroll">Our sponsors</h1>
-        <p class="show-on-scroll">
-          We thank our generous sponsors for helping us launch Strathosphere
-          I, II and III.
-        </p>
-      </div>
-    </section>
-  </div>
-  <footer>
-      <div id="footer-content">
-          <div id="footer-left">
-              <h3>MSc Sustainable Engineering: Renewable Energy Systems and Environment</h3>
-              <h4>
-                  The University of Strathclyde is a charitable body, registered in Scotland, number SC015263.
-              </h4>
-
-          </div>
-          <ul class="social">
-              <li>
-                  <a href="https://github.com/isaacedwardtyler/isaacedwardtyler.github.io" target="_blank"><i class="fa-brands fa-github"> </i></a>
-              </li>
-              <li>
-                  <a href="https://www.strath.ac.uk/research/energysystemsresearchunit/" target="_blank">
-                      <img class="navbar-icon" src="assets/ESRU_300x300.png" alt="ESRU" id="ESRU-logo" />
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </footer>
-  <script src="js/scroll.js"></script>
+    </footer>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
