@@ -269,6 +269,18 @@ body {
   margin: 0;
 }
 
+.section > div > h3 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.section > div > h4 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
 .section > div > p {
   font-size: 16px;
   padding: 0;
