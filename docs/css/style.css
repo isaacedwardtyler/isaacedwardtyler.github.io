@@ -268,6 +268,11 @@ body {
   padding: 0;
   margin: 0;
 }
+.section > div > div > div > h1 {
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+}
 
 .section > div > h3 {
     font-size: 24px;
@@ -293,7 +298,8 @@ body {
 }
 
 #about {
-  background-image: url("../assets/rocket.png"), radial-gradient(ellipse at right, #1b2735 0%, #000000 80%);
+    /*background-image: url("../assets/theteam/circleteam.png"), radial-gradient(ellipse at right, #1b2735 0%, #000000 80%);*/
+    background-image: radial-gradient(ellipse at right, #1b2735 0%, #000000 80%);
 }
 
 a {
@@ -302,8 +308,9 @@ a {
 }
 
 #projects {
-  background-position: left;
-  background-image: url("../assets/cansat-render-cool.png"), radial-gradient(ellipse at bottom left, #1b2735 0%, #000000 80%);
+    background-position: left;
+    /*background-image: url("../assets/netmap.png"), radial-gradient(ellipse at bottom left, #1b2735 0%, #000000 80%);*/
+    background-image: radial-gradient(ellipse at bottom left, #1b2735 0%, #000000 80%);
 }
 #projects #project-text {
   margin-left: auto;
@@ -314,7 +321,7 @@ a {
 }
 #join::after {
   background-position: right;
-  background-image: url("../assets/pcb.png");
+  /*background-image: url("../assets/pcb.png");*/
   background-size: 40%;
   filter: brightness(50%);
   background-repeat: no-repeat;

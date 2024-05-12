@@ -5,7 +5,8 @@ const main = async () => {
     let file = "launch-horz.tar"
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         console.log("Using mobile launch images")
-        file = "launch-vert.tar"
+    //    file = "launch-vert.tar"
+    //lets keep this simple
     } else {
         console.log("Using desktop launch images")
     }
